@@ -53,6 +53,11 @@ module.exports = {
     devServer: {
         contentBase: path.join(__dirname, '../static'),
         compress: true,
-        port: 9000
+        port: 9000,
+        proxy: [{
+            context: ['/api/**'],
+            target: 'http://localhost:3000',
+            changeOrigin: true
+        }]
     }
 }

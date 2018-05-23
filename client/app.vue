@@ -7,7 +7,9 @@
 <script>
 export default {
     mounted() {
-        console.log('mounted')
+        this.$axios.get('/api/test').then((res) => {
+            console.log(res)
+        })
     }
 }
 </script>
