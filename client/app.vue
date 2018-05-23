@@ -1,5 +1,7 @@
 <template>
-    <div>index page</div>
+    <div id="app">
+        index page
+    </div>
 </template>
 
 <script>
@@ -9,4 +11,3 @@ export default {
     }
 }
 </script>
-
